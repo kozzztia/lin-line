@@ -1,0 +1,26 @@
+@use "styles/mixins";
+
+.footer{
+  position: relative;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  @media screen and (max-width: 680px){
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: -1em;
+    right: -1em;
+    border-radius: 50%;
+    z-index: 50;
+    border: 1px solid mixins.$decor-color;
+
+    &__content{
+      display: none;
+    }
+  }
+}

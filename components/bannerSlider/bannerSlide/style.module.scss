@@ -1,0 +1,30 @@
+@use 'styles/mixins';
+
+
+.slide{
+  //width: max(1200px , 100%);
+  width:70%;
+  margin:0 auto;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: mixins.$main-text-color;
+  text-shadow: 0 5px 5px mixins.$text-color;
+  &__title{
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    white-space: nowrap;
+  }
+  &__article{
+    margin-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+  }
+  &__link{
+    @include mixins.add-link
+  }
+}

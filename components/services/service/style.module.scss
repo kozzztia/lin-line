@@ -1,0 +1,17 @@
+@use '../../../styles/mixins';
+.service{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: mixins.$default-height;
+  flex-basis: 33%;
+  &__title{
+    @include mixins.services
+  }
+  @media screen and (max-width: 680px){
+    margin: 10px auto;
+    height: mixins.$default-modile-height;
+  }
+}

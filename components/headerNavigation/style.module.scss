@@ -1,0 +1,43 @@
+@use 'styles/mixins.scss';
+
+
+.list{
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  &__item{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    overflow: hidden;
+    white-space: nowrap;
+    a{
+      @include mixins.link();
+    }
+  }
+  &__btn{
+    display: none;
+  }
+}
+//-------------------------
+@media screen and (max-width:680px) {
+  //.list{
+  //  flex-direction: column;
+  //  position: absolute;
+  //  left: 0;
+  //  top:0;
+  //  &__item{
+  //    margin-left:auto;
+  //    justify-content: right;
+  //  }
+  //  &__btn{
+  //    display: block;
+  //  }
+  //}
+}

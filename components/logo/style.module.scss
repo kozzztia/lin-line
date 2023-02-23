@@ -1,0 +1,13 @@
+//use @use 'styles/mixins.scss';
+.logo {
+  position: relative;
+  flex-basis: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  .logo__picture {
+    min-width:300px;
+    height: 150px;
+  }
+}

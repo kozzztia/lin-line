@@ -1,0 +1,16 @@
+
+
+
+.cardList{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

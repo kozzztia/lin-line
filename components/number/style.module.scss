@@ -1,0 +1,27 @@
+@use 'styles/mixins';
+
+.contact{
+  padding:5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 33%;
+  margin: 10px;
+  &__number{
+    cursor: pointer;
+    letter-spacing: .2em;
+    @include mixins.contact();
+  }
+  &__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text{
+    @include mixins.contact();
+  }
+  @media screen and (max-width:680px) {
+  }
+}

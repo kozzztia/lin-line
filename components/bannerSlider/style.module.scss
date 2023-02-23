@@ -1,0 +1,12 @@
+@use 'styles/mixins';
+
+.slider{
+  --swiper-theme-color: #20b2ff;
+  --swiper-navigation-size: 3em;
+  --swiper-scrollbar-drag-bg-color: #20b2ff;
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+  border: mixins.$bottom-decoration;
+  border-radius: 5px;
+}

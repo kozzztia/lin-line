@@ -1,0 +1,55 @@
+@use 'styles/mixins';
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+html{
+  scroll-behavior: smooth;
+
+}
+body{
+  font-size: calc(10px + .5vw);
+  font-family: mixins.$main-font;
+  color: mixins.$text-color;
+  font-weight: normal;
+  @media screen and (max-width :680px){
+    font-size: calc(10px + 1vw);
+  }
+
+}
+
+.main-layout{
+  position: relative;
+  overflow: hidden;
+  width: min(2500px, 100%);
+  height: auto;
+  margin: 0 auto;
+  z-index: 10;
+  border: mixins.$bottom-decoration;
+  background: mixins.$main-background-color;
+}
+
+
+.fullScreenBackground{
+  position: relative;
+  background-color: #575757;
+
+}
+.bannerScreenBackground{
+  position: relative;
+  background-color: #575757;
+}
+
+.main-wrapper{
+  width: min(1600px, 100%);
+  margin:0 auto;
+  padding:15px;
+  @media screen and (max-width :680px){
+    padding:1em;
+  }
+}
+

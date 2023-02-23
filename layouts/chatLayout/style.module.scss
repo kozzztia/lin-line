@@ -1,0 +1,42 @@
+@use 'styles/mixins';
+
+.form{
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media screen and (max-width : 680px){
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__btn{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    button{
+      font-size: 1.2em;
+      border: none;
+      border-radius: 2px;
+      background: mixins.$decor-color;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      color: mixins.$main-text-color;
+      text-shadow: 0 0 10px #000000;
+      cursor: pointer;
+      letter-spacing: .1em;
+      transition: .1s;
+      transform: scale(1);
+      &:hover{
+        transform: scale(1.1);
+      }
+      @media screen and (max-width: 680px){
+        width: 100%;
+      }
+
+    }
+  }
+
+}

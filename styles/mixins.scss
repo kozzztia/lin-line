@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+
+$main-font : 'Nunito', sans-serif;
+$size : 1em;
+$default-height : 100px;
+$default-modile-height : 60px;
+$decor-color : #20b2ff;
+$border-decor: rgba(87, 87, 87, 0.5);
+$bottom-decoration : 1px solid $border-decor;
+$main-text-color : rgb(255, 255, 255);
+$text-color : rgb(0, 0, 0 , .9);
+$background-color: $border-decor;
+$main-background-color: rgba(184, 230, 255, 0.42);
+
+//mixins
+@mixin add-link {
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  color: $decor-color;
+  text-shadow: 0 0 1px black;
+  text-align: right;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  right:1em;
+  bottom:1em;
+  text-shadow: 0  0 10px #000;
+  transition: .5s;
+  &:hover{
+    text-shadow: 0  0 10px #ffffff;
+  }
+}
+
+
+
+@mixin link {
+  font-size: $size;
+  font-weight: bold;
+  color: $main-text-color;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: .5s;
+  position: relative;
+  padding:5px;
+  text-shadow: 0 5px 5px $text-color;
+  @media screen  and (max-width: 680px){
+    font-size: calc($size + 2px);
+
+  }
+  &:after{
+    content: "";
+    display: block;
+    background: $decor-color;
+    position: absolute;
+    bottom:-5px;
+    left: 120%;
+    width:110%;
+    height: 2px;
+    transition: 0.2s;
+  }
+  &:hover{
+    &:after{
+      left:0;
+    }
+  }
+}
+@mixin contact(){
+  color: $text-color;
+  font-size: 1.5em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@mixin services(){
+  color: $text-color;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+//-----------------------main
+
+
+
+
+
+$card-decoration : $border-decor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

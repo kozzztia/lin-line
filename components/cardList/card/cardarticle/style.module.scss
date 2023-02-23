@@ -1,0 +1,28 @@
+@use 'styles/mixins';
+
+.article{
+  position: inherit;
+  margin:0 auto;
+  width:90%;
+  height: auto;
+  z-index: 30;
+  overflow: hidden;
+  &__title{
+    display: block;
+    margin:0 auto .5em;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    color: mixins.$main-text-color;
+    text-shadow: 0  2px 10px #000;
+  }
+  &__text{
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    text-indent: 2rem;
+    color: mixins.$main-text-color;
+    text-shadow: 0  2px 10px #000;
+  }
+}

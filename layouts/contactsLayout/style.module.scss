@@ -1,0 +1,11 @@
+@use './styles/mixins';
+.contacts{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: mixins.$bottom-decoration;
+  @media screen and (max-width: 680px){
+    flex-direction: column;
+  }
+}
