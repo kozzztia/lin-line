@@ -61,7 +61,7 @@ export const rateValues = {
             icon: "HomeOutlined",
             link: '#add',
             linkTitle: "підключити",
-            backGround: "icon",
+            backGround: "internet",
         },
         {
             id: '2',
@@ -83,7 +83,7 @@ export const rateValues = {
             icon: "ThunderboltOutlined",
             link: '#add',
             linkTitle: "підключити",
-            backGround: "icon",
+            backGround: "internet",
         },
     ]
 }
@@ -122,7 +122,7 @@ export const newsValues = {
             icon: "ThunderboltOutlined",
             link: 'more',
             linkTitle: "дізнатися більше",
-            backGround: "internet",
+            backGround: "logo",
         },
     ]
 }
